@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Us | Brundall Bullfinches</title>
+    <link rel="icon" type="image/png" href="../images/bullfinches_crest.png">
+    
+    <!-- FontAwesome CDN for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Header (Including the club crest and navigation bar) -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/bullfinches_crest.png" alt="Brundall Bullfinches Crest">
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleDropdown()">&#9776;</div>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown" id="dropdownMenu">
+            <a href="../index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="#">TEAMS</a>
+            <a href="https://fulltime.thefa.com/index.html;jsessionid=87D8DFFADDE02CFA7C44ABBD93BA88D4?selectedSeason=49456929&selectedFixtureGroupAgeGroup=0&selectedDivision=106601385&selectedCompetition=0" target="_blank">LEAGUE TABLES</a>
+            <a href="#">DONATE</a>
+            <a href="#">NEWS</a>
+            <a href="mailto:info@brundallbullfinches.co.uk">CONTACT</a>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bullfinchesfc?igsh=cWpya20ya3l4ZTls&utm_source=qr" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/bullfinchesfc?s=21" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://wa.me/447842578875" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Container -->
+    <div class="main-content-container">
+        <!-- Main Content -->
+        <section class="main-content">
+            <h1>Support Us</h1>
+            <p>Your support helps us continue to grow and offer the best experience to our players. Whether through donations or sponsorship, we appreciate all contributions!</p>
+
+            <!-- PayPal Donate Button -->
+            <div class="donate-button">
+                <a href="https://www.paypal.com/donate?hosted_button_id=XXXXXXXXX" target="_blank">
+                    <button class="donate-btn">Donate Now</button>
+                </a>
+            </div>
+
+            <p>For businesses or individuals looking to sponsor us, please get in touch with us to discuss options.</p>
+
+            <!-- Sponsor Logos -->
+            <div class="sponsor-logos">
+                <a href="#"><img src="../images/eaa.png" alt="EAAA Logo"></a>
+                <a href="#"><img src="../images/nars.png" alt="NARS Logo"></a>
+                <a href="#"><img src="../images/kick-it-out.webp" alt="Kick It Out Logo"></a>
+                <a href="#"><img src="../images/england-accredited.webp" alt="England Accredited Logo"></a>
+            </div>
+        </section>
+    </div> <!-- End of main-content-container -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-logos">
+            <a href="#"><img src="../images/eaa.png" alt="EAAA Logo" class="footer-logo"></a>
+            <a href="#"><img src="../images/nars.png" alt="NARS Logo" class="footer-logo"></a>
+            <a href="#"><img src="../images/kick-it-out.webp" alt="Kick It Out Logo" class="footer-logo"></a>
+            <a href="#"><img src="../images/england-accredited.webp" alt="England Accredited Logo" class="footer-logo"></a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> Brundall Bullfinches. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Dropdown Menu -->
+    <script>
+        // Function to toggle the dropdown visibility
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block'; // Toggle visibility
+        }
+
+        // Function to close the dropdown when mouse leaves
+        function closeDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = 'none'; // Close the dropdown
+        }
+
+        // Set the current year in the footer
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
