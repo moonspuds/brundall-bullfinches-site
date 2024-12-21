@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brundall Bullfinches - Official Football Club</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Welcome to the official website of Brundall Bullfinches FC, a community-based football club in Norfolk. Stay up to date with news, league tables, and how to support us.">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="Brundall Bullfinches, football, local football club, Brundall, Norfolk, community football, league tables, donate">
+
+    <link rel="icon" type="image/png" href="images/bullfinches_crest.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Inline Styles -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1A004D;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .welcome-message {
+            font-size: 2rem; /* Adjusted size for readability */
+            color: white;
+            margin-bottom: 20px; /* Reduced space below the message */
+            font-weight: 600;
+        }
+
+        .cta-button {
+            font-size: 1.2rem;
+            color: white;
+            background: linear-gradient(135deg, #007BFF, #0056b3);
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #0056b3, #003f7f);
+            transform: scale(1.05);
+        }
+
+        .cta-button:active {
+            background: linear-gradient(135deg, #003f7f, #002c5f);
+        }
+
+        .hero-image {
+            margin-top: 40px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .footer {
+            background-color: #1A004D;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-logos {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: white;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer a:hover {
+            color: #007BFF;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/bullfinches_crest.png" alt="Brundall Bullfinches Crest">
+        </div>
+        <div class="hamburger" onclick="toggleDropdown()">&#9776;</div>
+        <div class="dropdown" id="dropdownMenu" onmouseleave="closeDropdown()">
+            <a href="index.html">HOME</a>
+            <a href="html/about.html">ABOUT</a>
+            <a href="https://fulltime.thefa.com/index.html?league=820797" target="_blank">LEAGUE TABLES</a>
+            <a href="https://www.justgiving.com/crowdfunding/BrundallBullfinchesFC" target="_blank">DONATE</a>
+            <a href="mailto:info@brundallbullfinches.co.uk">CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <h1 class="welcome-message">WELCOME TO THE HOME OF THE BULLFINCHES </h1>
+        <a href="html/about.html" class="cta-button">LEARN MORE</a>
+
+        <!-- Transparent Bruno Image -->
+        <img src="images/transparentbrunos.png" alt="Brundall Bullfinches football club team photo" class="hero-image">
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logos">
+            <img src="images/eaa.png" alt="EAAA Logo">
+            <img src="images/nars.png" alt="NARS Logo">
+            <img src="images/kick-it-out.webp" alt="Kick It Out Logo">
+            <img src="images/england-accredited.webp" alt="England Accredited Logo">
+        </div>
+        <p>&copy; <span id="currentYear"></span> Brundall Bullfinches. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function closeDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = 'none';
+        }
+    </script>
+</body>
+
+</html>
