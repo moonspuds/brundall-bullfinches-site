@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brundall Bullfinches - Official Football Club</title>
+
+    <!-- Meta Description -->
+    <meta name="description" content="Welcome to the official website of Brundall Bullfinches FC, a community-based football club in Norfolk. Stay up to date with news, league tables, and how to support us.">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="Brundall Bullfinches, football, local football club, Brundall, Norfolk, community football, league tables, donate">
+
+    <link rel="icon" type="image/png" href="images/bullfinches_crest.png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome for social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Inline Styles -->
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1A004D;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-content {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .welcome-message {
+            font-size: 2rem;
+            color: white;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .cta-button {
+            font-size: 1.2rem;
+            color: white;
+            background: linear-gradient(135deg, #007BFF, #0056b3);
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            display: inline-block;
+            transition: background-color 0.3s, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: linear-gradient(135deg, #0056b3, #003f7f);
+            transform: scale(1.05);
+        }
+
+        .cta-button:active {
+            background: linear-gradient(135deg, #003f7f, #002c5f);
+        }
+
+        .hero-image {
+            margin-top: 40px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .footer {
+            background-color: #1A004D;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-logos {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .footer p {
+            font-size: 14px;
+            color: white;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer a:hover {
+            color: #007BFF;
+        }
+
+        /* Social media icons in the dropdown */
+        .dropdown .social-icons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .dropdown .social-icons a {
+            font-size: 20px;
+            color: #fff;
+            transition: all 0.3s ease;
+        }
+
+        .dropdown .social-icons a:hover {
+            color: #fff;
+            transform: scale(1.2);
+            text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+            box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/bullfinches_crest.png" alt="Brundall Bullfinches Crest">
+        </div>
+        <div class="hamburger" onclick="toggleDropdown()">&#9776;</div>
+        <div class="dropdown" id="dropdownMenu" onmouseleave="closeDropdown()">
+            <a href="index.html">HOME</a>
+            <a href="html/about.html">ABOUT</a>
+            <a href="https://fulltime.thefa.com/index.html?league=820797" target="_blank">LEAGUE TABLES</a>
+            <a href="https://www.justgiving.com/crowdfunding/BrundallBullfinchesFC" target="_blank">DONATE</a>
+            <a href="mailto:info@brundallbullfinches.co.uk">CONTACT</a>
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/yourwhatsapplink" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <h1 class="welcome-message">WELCOME TO THE HOME OF THE BULLFINCHES</h1>
+        <a href="html/about.html" class="cta-button">LEARN MORE</a>
+
+        <!-- Transparent Bruno Image -->
+        <img src="images/transparentbrunos.png" alt="Brundall Bullfinches football club team photo" class="hero-image">
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logos">
+            <img src="images/eaa.png" alt="EAAA Logo">
+            <img src="images/nars.png" alt="NARS Logo">
+            <img src="images/kick-it-out.webp" alt="Kick It Out Logo">
+            <img src="images/england-accredited.webp" alt="England Accredited Logo">
+        </div>
+        <p>&copy; <span id="currentYear"></span> Brundall Bullfinches. All rights reserved.</p>
+    </footer>
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-consent-banner">
+    <div style="text-align: center; font-size: 2rem; margin-bottom: 10px;">
+        <span role="img" aria-label="cookie">🍪</span>
+        <span role="img" aria-label="licking lips">😋</span>
+        <span role="img" aria-label="eyes">👀</span>
+    </div>
+    <p>Mmm, cookies! We use cookies to enhance your experience on our website. By continuing to browse, you agree to our use of cookies. <a href="https://policies.google.com/technologies/cookies" target="_blank" style="color: #007BFF;">Learn more</a>.</p>
+    <button onclick="acceptCookies()">Accept</button>
+</div>
+
+    <!-- JavaScript -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function closeDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = 'none';
+        }
+
+        // Cookie consent logic
+        if (!localStorage.getItem("cookiesAccepted")) {
+            document.getElementById("cookie-consent-banner").style.display = "block";
+        }
+
+        function acceptCookies() {
+            // Store the acceptance in local storage so the banner doesn't appear again
+            localStorage.setItem("cookiesAccepted", "true");
+            document.getElementById("cookie-consent-banner").style.display = "none";
+
+            // Load Google Analytics script
+            loadGoogleAnalytics();
+        }
+
+        function loadGoogleAnalytics() {
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = "https://www.googletagmanager.com/gtag/js?id=G-0L8ZX3JT17";
+            document.head.appendChild(script);
+
+            script.onload = function() {
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-0L8ZX3JT17');
+            }
+        }
+    </script>
+</body>
+
+</html>
