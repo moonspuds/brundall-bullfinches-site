@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Brundall Bullfinches</title>
+    <link rel="icon" type="image/png" href="../images/bullfinches_crest.png"> <!-- Corrected file path -->
+
+    <!-- Google Fonts for Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Corrected file path -->
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;"> <!-- Set Roboto as the default font -->
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" style="display: none;">
+        <div style="text-align: center; font-size: 2rem; margin-bottom: 10px;">
+            <span role="img" aria-label="cookie">🍪</span>
+            <span role="img" aria-label="licking lips">😋</span>
+            <span role="img" aria-label="eyes">👀</span>
+        </div>
+        <p>Mmm, cookies! We use cookies to enhance your experience on our website. Cookies aren't for everyone, and that's okay. We'll remember your choice either way. <a href="https://policies.google.com/technologies/cookies" target="_blank" style="color: #007BFF;">Learn more</a>.</p>
+        <div style="margin-top: 10px;">
+            <button onclick="acceptCookies()" style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Yes, I like cookies</button>
+            <button onclick="declineCookies()" style="background-color: #f44336; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">No, thanks</button>
+        </div>
+    </div>
+
+    <!-- Header (Including the club crest and navigation bar) -->
+    <nav class="navbar" style="font-family: 'Roboto', sans-serif;"> <!-- Roboto for the navbar -->
+        <div class="logo">
+            <img src="../images/bullfinches_crest.png" alt="Brundall Bullfinches Crest">
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleDropdown()">&#9776;</div>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown" id="dropdownMenu" onmouseleave="closeDropdown()">
+            <a href="../index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+            <a href="sponsors.html">SPONSORS</a>
+            <a href="https://fulltime.thefa.com/index.html;jsessionid=87D8DFFADDE02CFA7C44ABBD93BA88D4?selectedSeason=49456929&selectedFixtureGroupAgeGroupp=0&selectedDivision=106601385&selectedCompetition=0" target="_blank">LEAGUE TABLES</a>
+            <a href="https://www.justgiving.com/crowdfunding/BrundallBullfinchesFC?utm_term=PWmMVMkQM" target="_blank">DONATE</a>
+            <a href="mailto:info@brundallbullfinches.co.uk">CONTACT</a>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/bullfinchesfc?igsh=cWpya20ya3l4ZTls&utm_source=qr" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="https://x.com/bullfinchesfc?s=21" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://wa.me/447842578875" target="_blank" class="social-icon"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="main-content" style="margin-top: 100px; padding: 20px;">
+        <h1 style="margin-bottom: 20px;">Who Are We?</h1> <!-- Roboto for the header -->
+        <p style="margin-bottom: 20px;">
+            We are a new football club based in Norfolk, deeply connected to local causes and dedicated to uplifting our community as a whole.
+        </p>
+
+        <h2 style="margin-bottom: 15px;">How Did It All Start?</h2> <!-- Roboto for subheaders -->
+        <p style="margin-bottom: 20px;">
+            Back when the Brundall Sports Hub first opened in the summer of 2023, we started out as a group of men playing casual small-sided games on Monday and Thursday evenings. A few months later, some of us ended up playing in 11-a-side charity friendlies against local charity teams.
+        </p>
+        <p style="margin-bottom: 20px;">
+            We’ve taken part in fundraisers for various charities, but most of them have been for East Anglian Air Ambulance (EAAA) and Norfolk Accident and Rescue Service (NARS). These are both causes close to our hearts, with one of our casual group participants being an air ambulance doctor and another being a volunteer emergency first responder for NARS. We now proudly wear the “In Aid of East Anglian Air Ambulance” logo on the front of our kits, in addition to the NARS logo on our sleeves.
+        </p>
+
+        <h2 style="margin-bottom: 15px;">Why “Bullfinches”?</h2>
+        <p style="margin-bottom: 20px;">
+            The name Bullfinches came from one of our founding members, who is partial to a bit of birdwatching and assures us that he has seen a bullfinch at the nearby RSPB Strumpshaw Fen on at least one occasion. We even have a cartoon mascot, named Bruno the Bullfinch! You’ll notice him appearing in our social media posts and various other media.
+        </p>
+
+        <h2 style="margin-bottom: 15px;">What’s Next?</h2>
+        <p style="margin-bottom: 20px;">
+            If all goes to plan, we intend to have a squad going into the Norfolk Sunday League again next season and for the foreseeable future. We’re also open to potentially starting other teams further down the line and would love to work with positive, like-minded people who want to be part of that journey.
+        </p>
+        <p style="margin-bottom: 20px;">
+            Don’t hesitate to get in touch if you feel you’d like to get involved with our club in any capacity!
+        </p>
+
+        <!-- Contact Icons -->
+        <div class="contact-icons">
+            <a href="https://wa.me/447842578875" target="_blank" class="contact-icon" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="sms:+447842578875" class="contact-icon" title="Send a Text">
+                <i class="fas fa-sms"></i>
+            </a>
+            <a href="mailto:info@brundallbullfinches.co.uk" class="contact-icon" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <!-- Image of Bruno the Bullfinch -->
+        <img src="../images/transparentbrunos.png" alt="Bruno the Bullfinch" style="display: block; margin: 40px auto; max-width: 300px; height: auto;">
+    </section>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <!-- Logos -->
+    <div class="footer-logos" style="text-align: center;">
+        <a href="#"><img src="../images/eaa.png" alt="EAAA Logo" style="margin: 10px;"></a> <!-- Corrected file path -->
+        <a href="#"><img src="../images/nars.png" alt="NARS Logo" style="margin: 10px;"></a> <!-- Corrected file path -->
+        <a href="#"><img src="../images/kick-it-out.webp" alt="Kick It Out Logo" style="margin: 10px;"></a> <!-- Corrected file path -->
+        <a href="#"><img src="../images/england-accredited.webp" alt="England Accredited Logo" style="margin: 10px;"></a> <!-- Corrected file path -->
+    </div>
+    <!-- Copyright Text -->
+    <p style="text-align: center;">&copy; <span id="currentYear"></span> Brundall Bullfinches. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript to display the current year -->
+<script>
+    // Update the current year in the footer
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        // Function to toggle the dropdown visibility for the hamburger menu
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block'; // Toggle visibility
+        }
+
+        // Function to close the dropdown menu when mouse leaves
+        function closeDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = 'none'; // Close the dropdown when mouse leaves
+        }
+    </script>
+
+    <!-- External JavaScript for Cookie Banner -->
+    <script src="../js/cookiebanner.js"></script> <!-- Reference to external JS file -->
+</body>
+
+</html>
