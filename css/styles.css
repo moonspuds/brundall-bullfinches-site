@@ -1,0 +1,410 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Background Color */
+body {
+    background-color: #1A004D; /* Dark background for entire page */
+    min-height: 100vh; /* Ensure the body takes up at least the full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Align content in a column */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header Styles */
+nav.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A004D;
+    padding: 20px 40px;
+    position: relative;
+    box-shadow: none;
+    z-index: 10; /* Ensure navbar stays on top */
+}
+
+/* This will only affect elements on the homepage (index.html) */
+.homepage .hero-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.homepage .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire section */
+    filter: brightness(0.6); /* Slightly darken the image */
+}
+
+.homepage .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.homepage .hero-overlay h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: white;
+    margin-top: 40%;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+}
+
+.homepage .cta-button {
+    font-size: 1.2rem;
+    color: white;
+    background-color: #007BFF;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s, transform 0.3s ease;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.homepage .cta-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.homepage .cta-button:active {
+    background-color: #003f7f;
+}
+
+/* Logo Styling */
+.navbar .logo {
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    z-index: 10;
+}
+
+.logo img {
+    width: 140px;
+    height: auto;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    z-index: 20;
+    position: absolute;
+    right: 20px;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    background-color: #2A0055;
+    padding: 10px;
+    border-radius: 5px;
+    width: 250px;
+    z-index: 15;
+}
+
+.dropdown a {
+    display: block;
+    padding: 8px 10px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Add social icons to the dropdown */
+.dropdown .social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.dropdown .social-icons a {
+    font-size: 20px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.dropdown .social-icons a:hover {
+    color: #fff;
+    transform: scale(1.2);
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff;
+}
+
+/* Neon Glow Effect on Hover for Dropdown Links */
+.dropdown a:hover {
+    background-color: #ff00ff;
+    color: #fff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    transform: scale(1.05); /* Slight scale effect */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Remove Neon Glow from all other links globally */
+a {
+    text-shadow: none; /* Ensures no glow on site-wide links */
+    color: #fff; /* Default color for links */
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.social-icons a {
+    font-size: 25px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+    transform: scale(1.2);
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff;
+    box-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+    animation: wiggle 0.6s ease-in-out;
+}
+
+/* Neon Glowing Effect on Hover */
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* Main Content Section */
+.main-content {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    flex-grow: 1; /* Ensures this section grows to take available space */
+    margin-top: 50px; /* Adjusted space between the content and the crest */
+    margin-bottom: 50px; /* Space at the bottom to ensure the footer does not overlap content */
+    max-width: 1200px; /* Restrict content width to avoid overflow */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-content h1 {
+    font-size: 2rem; /* Adjusted title size */
+    margin-bottom: 20px; /* Space between title and button */
+}
+
+.main-content p {
+    font-size: 1rem; /* Reduced font size */
+    margin-bottom: 20px; /* Space between paragraph and button */
+}
+
+/* Hero Image Styling */
+.hero-image {
+    width: 100%;        /* Makes the image span the full width of the screen */
+    max-height: 600px;  /* Increased max-height to make the image bigger */
+    height: auto;       /* Maintains the aspect ratio */
+    display: block;     /* Ensures it behaves like a block element */
+    margin: 0 auto;     /* Centers it if needed */
+    z-index: 0;         /* Ensures the image stays behind the navbar and other content */
+    padding-top: 20px;  /* Reduced space above the image to make it more balanced */
+    filter: brightness(0.8); /* Added filter for darkened overlay effect */
+}
+
+/* Button Styling */
+.donate-button {
+    margin-top: 20px;
+}
+
+.donate-btn {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px; /* Adjusted button size */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.donate-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Learn More Link (replaces button) */
+.learn-more {
+    font-size: 16px;
+    color: #007BFF;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    color: #0056b3;
+}
+
+/* Contact Icons Styling */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between icons */
+    margin-bottom: 20px; /* Space below the icons */
+}
+
+.contact-icon i {
+    font-size: 30px; /* Adjust icon size */
+    color: white; /* Ensure the icons are white */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.contact-icon i:hover {
+    transform: scale(1.2); /* Enlarge icon on hover */
+}
+
+/* Cookie Consent Banner Styles */
+#cookie-consent-banner {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: block; /* Ensure the banner is always visible for testing */
+    z-index: 9999; /* Makes sure it is above other elements */
+}
+
+/* Cookie Consent Banner */
+#cookie-consent-banner {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f4f4f4; /* Softer light gray */
+    color: #1a004d; /* Club's primary color */
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 1rem; /* Slightly smaller text */
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#cookie-consent-banner p {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    font-weight: 400; /* Lighter text weight */
+    font-size: 1rem;
+}
+
+#cookie-consent-banner button {
+    background-color: #1a004d;
+    color: white;
+    font-size: 0.9rem;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 15px;
+}
+
+#cookie-consent-banner button:hover {
+    background-color: #007BFF;
+}
+
+#cookie-consent-banner a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#cookie-consent-banner a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #1A004D; /* Dark background */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Ensure footer appears below content */
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+/* Footer Logos */
+.footer-logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    width: 40px;  /* Reduced size for footer logos */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px;
+}
+
+.footer img {
+    width: 80px;
+    height: auto;
+    margin: 10px;
+}
+
+/* Footer Text */
+.footer p {
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #007BFF;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar {
+        display: block;
+        text-align: center;
+    }
+    .footer {
+        padding: 10px;
+    }
+}
