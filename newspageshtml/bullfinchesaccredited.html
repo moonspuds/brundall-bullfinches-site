@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brundall Bullfinches FC Earns FA Accreditation</title>
+    <meta name="description" content="Brundall Bullfinches FC celebrates earning FA accreditation, a prestigious recognition of our club's commitment to quality, inclusivity, and grassroots football.">
+    <meta name="keywords" content="Brundall Bullfinches FC, FA Accreditation, grassroots football, Norfolk FA, England Football">
+    <link rel="icon" type="image/png" href="../images/bullfinches_crest.png">
+
+    <!-- Google Fonts for Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+
+    <!-- Header -->
+    <nav class="navbar" style="font-family: 'Roboto', sans-serif;">
+        <div class="logo">
+            <img src="../images/bullfinches_crest.png" alt="Brundall Bullfinches Crest">
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleDropdown()">&#9776;</div>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown" id="dropdownMenu" onmouseleave="closeDropdown()">
+            <a href="../index.html">HOME</a>
+            <a href="../html/about.html">ABOUT</a>
+            <a href="../html/fixtures.html">FIXTURES</a>
+            <a href="../html/results.html">RESULTS</a>
+            <a href="../html/table.html">TABLES</a>
+            <a href="../html/sponsors.html">SPONSORS</a>
+            <a href="https://www.justgiving.com/crowdfunding/BrundallBullfinchesFC?utm_term=PWmMVMkQM" target="_blank">DONATE</a>
+            <a href="../html/contact.html">CONTACT</a>
+            
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/bullfinchesfc?igsh=cWpya20ya3l4ZTls&utm_source=qr" target="_blank" class="social-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/bullfinchesfc?s=21" target="_blank" class="social-icon" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://wa.me/447424095517" target="_blank" class="social-icon" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="main-content" style="margin-top: 100px; padding: 20px;">
+        <!-- Blog Post Title -->
+        <article class="news-item">
+            <h2 style="font-size: 24px; margin-bottom: 10px;">Brundall Bullfinches FC Earns FA Accreditation</h2>
+            <p class="news-date" style="margin-bottom: 20px;">January 7, 2025</p>
+            <img src="../images/england-accredited.webp" alt="FA Accreditation" style="width: 100%; height: auto; max-width: 100%; margin-bottom: 20px;">
+            <p style="margin-bottom: 20px; text-align: justify;">
+                We are proud to announce that Brundall Bullfinches FC has achieved FA Accreditation. This prestigious recognition highlights our club's commitment to providing high-quality football experiences that are inclusive, safe, and accessible for all.
+            </p>
+            <p style="margin-bottom: 20px; text-align: justify;">
+                FA Accreditation serves as a benchmark of excellence for grassroots football clubs, emphasizing the importance of organization, community involvement, and fostering the love of the game. By achieving this milestone, Brundall Bullfinches FC has demonstrated its dedication to meeting these high standards.
+            </p>
+            <p style="margin-bottom: 20px; text-align: justify;">
+                We would like to thank all our players, coaches, and supporters for their continued dedication to the club and its values. Together, we are building a legacy of football excellence that will benefit our community for years to come.
+            </p>
+            <p style="margin-bottom: 20px; text-align: justify;">
+                To celebrate this achievement, we will continue to strive for greater heights in grassroots football. We invite everyone in the community to join us, whether as players, volunteers, or supporters. Let's keep the spirit of football alive and thriving!
+            </p>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" style="padding: 20px; text-align: center;">
+        <div class="footer-logos" style="display: flex; justify-content: space-evenly; gap: 20px; flex-wrap: wrap; max-width: 100%; overflow: hidden; align-items: center;">
+            <a href="#" style="flex: 1 1 15%; max-width: 120px;"><img src="../images/eaa.png" alt="EAAA Logo" class="footer-logo" style="width: 100%; height: auto;"></a>
+            <a href="#" style="flex: 1 1 15%; max-width: 120px;"><img src="../images/nars.png" alt="NARS Logo" class="footer-logo" style="width: 100%; height: auto;"></a>
+            <a href="#" style="flex: 1 1 15%; max-width: 120px;"><img src="../images/kick-it-out.webp" alt="Kick It Out Logo" class="footer-logo" style="width: 100%; height: auto;"></a>
+            <a href="#" style="flex: 1 1 15%; max-width: 120px;"><img src="../images/england-accredited.webp" alt="England Accredited Logo" class="footer-logo" style="width: 100%; height: auto;"></a>
+            <a href="#" style="flex: 1 1 15%; max-width: 120px;"><img src="../images/JustPlay.png" alt="Just Play Logo" class="footer-logo" style="width: 100%; height: auto;"></a>
+        </div>
+        <p>&copy; <span id="currentYear"></span> Brundall Bullfinches. All rights reserved.</p>
+
+        <!-- JavaScript to display the current year -->
+        <script>
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        </script>
+
+        <!-- External JavaScript for Cookie Banner -->
+        <script src="../js/cookiebanner.js"></script>
+
+        <!-- JavaScript for Hamburger Menu -->
+        <script>
+            function toggleDropdown() {
+                const dropdown = document.getElementById('dropdownMenu');
+                dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+            }
+
+            function closeDropdown() {
+                const dropdown = document.getElementById('dropdownMenu');
+                dropdown.style.display = 'none';
+            }
+        </script>
+    </footer>
+</body>
+
+</html>
