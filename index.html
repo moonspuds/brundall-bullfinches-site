@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brundall Bullfinches - Official Football Club</title>
+
+    <meta name="description" content="Welcome to the official website of Brundall Bullfinches FC, a community-based football club in Norfolk. Stay up to date with news, league tables, and how to support us.">
+    <meta name="keywords" content="Brundall Bullfinches, football, local football club, Brundall, Norfolk, community football, league tables, donate">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/png" href="images/bullfinches_crest.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" style="display: none; text-align: center; padding: 20px; background-color: #f8f9fa; border: 1px solid #ddd; position: fixed; bottom: 0; width: 100%; z-index: 1000;">
+        <div style="text-align: center; font-size: 2rem; margin-bottom: 10px;">
+            <span role="img" aria-label="cookie">🍪</span>
+            <span role="img" aria-label="licking lips">😋</span>
+            <span role="img" aria-label="eyes">👀</span>
+        </div>
+        <p>Mmm, cookies! We use cookies to enhance your experience on our website. Cookies aren't for everyone, and that's okay. We'll remember your choice either way. <a href="https://policies.google.com/technologies/cookies" target="_blank" style="color: #007BFF;">Learn more</a>.</p>
+        <div style="margin-top: 10px;">
+            <button onclick="acceptCookies()" style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Yes, I like cookies</button>
+            <button onclick="declineCookies()" style="background-color: #f44336; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">No, thanks</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/bullfinches_crest.png" alt="Brundall Bullfinches Crest">
+        </div>
+        <div class="hamburger" onclick="toggleDropdown()">&#9776;</div>
+        <div class="dropdown" id="dropdownMenu" onmouseleave="closeDropdown()">
+            <a href="index.html">HOME</a>
+            <a href="html/news.html">NEWS</a>
+            <a href="html/about.html">ABOUT</a>
+            <a href="html/fixtures.html">FIXTURES</a>
+            <a href="html/results.html">RESULTS</a>
+            <a href="html/table.html">TABLES</a>
+            <a href="html/sponsors.html">SPONSORS</a>
+            <a href="https://www.justgiving.com/crowdfunding/BrundallBullfinchesFC?utm_term=PWmMVMkQM" target="_blank">DONATE</a>
+            <a href="html/contact.html">CONTACT</a>
+            <div class="social-icons">
+                <a href="https://x.com/bullfinchesfc?s=21" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/bullfinchesfc?igsh=cWpya20ya3l4ZTls&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/447424095517" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="main-content">
+        <h1 class="welcome-message">WELCOME TO THE HOME OF THE BULLFINCHES</h1>
+        <a href="html/about.html" class="cta-button">LEARN MORE</a>
+        <img src="images/transparentbrunos.png" alt="Brundall Bullfinches football club team photo" class="hero-image">
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" style="color: white; text-align: center; padding: 20px;">
+        <div class="footer-logos-wrapper" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; align-items: center; max-width: 100%; margin: 0 auto;">
+            <a href="#" style="flex: 1; max-width: 200px;">
+                <img src="images/eaa.png" alt="EAAA Logo" class="footer-logo" style="width: 100%; height: auto; max-width: 200px;">
+            </a>
+            <a href="#" style="flex: 1; max-width: 200px;">
+                <img src="images/nars.png" alt="NARS Logo" class="footer-logo" style="width: 100%; height: auto; max-width: 200px;">
+            </a>
+            <a href="#" style="flex: 1; max-width: 200px;">
+                <img src="images/kick-it-out.webp" alt="Kick It Out Logo" class="footer-logo" style="width: 100%; height: auto; max-width: 200px;">
+            </a>
+            <a href="#" style="flex: 1; max-width: 200px;">
+                <img src="images/england-accredited.webp" alt="England Accredited Logo" class="footer-logo" style="width: 100%; height: auto; max-width: 200px;">
+            </a>
+            <a href="#" style="flex: 1; max-width: 200px;">
+                <img src="images/JustPlay.png" alt="Just Play Logo" class="footer-logo" style="width: 100%; height: auto; max-width: 200px;">
+            </a>
+        </div>
+        <p style="color: white; margin-top: 20px;">&copy; <span id="currentYear"></span> Brundall Bullfinches. All rights reserved.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function closeDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = 'none';
+        }
+
+        function acceptCookies() {
+            document.getElementById('cookie-consent-banner').style.display = 'none';
+            setCookie('cookiesAccepted', 'true', 365);
+
+            // Load Google Analytics script dynamically
+            const gtagScript = document.createElement('script');
+            gtagScript.src = "https://www.googletagmanager.com/gtag/js?id=GA-470840731";
+            gtagScript.async = true;
+            document.head.appendChild(gtagScript);
+
+            gtagScript.onload = function() {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'GA-470840731');
+            };
+        }
+
+        function declineCookies() {
+            document.getElementById('cookie-consent-banner').style.display = 'none';
+            setCookie('cookiesAccepted', 'false', 365);
+        }
+
+        function setCookie(name, value, days) {
+            const d = new Date();
+            d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+            const expires = "expires=" + d.toUTCString();
+            document.cookie = name + "=" + value + ";" + expires + ";path=/";
+        }
+
+        function getCookie(name) {
+            const nameEq = name + "=";
+            const ca = document.cookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                const c = ca[i].trim();
+                if (c.indexOf(nameEq) === 0) {
+                    return c.substring(nameEq.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        window.onload = function() {
+            const cookieBanner = document.getElementById('cookie-consent-banner');
+            if (!getCookie('cookiesAccepted')) {
+                cookieBanner.style.display = 'block';
+            } else if (getCookie('cookiesAccepted') === 'true') {
+                // Load Google Analytics if previously accepted
+                acceptCookies();
+            }
+        };
+    </script>
+
+    <style>
+        .cta-button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.25rem;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        .main-content {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .welcome-message {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+    </style>
+</body>
+
+</html>
