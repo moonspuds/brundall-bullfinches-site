@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Brundall Bullfinches</title>
+    <link rel="icon" type="image/png" href="../images/bullfinches_crest.png"> <!-- Adjusted path -->
+
+    <!-- Google Fonts for Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Adjusted path -->
+
+    <style>
+        /* Ensure the links behave like normal links, but also can be easily seen */
+        #lrep305155944 a {
+            color: #007BFF; /* Set color to blue like a link */
+            text-decoration: underline; /* Underline the text to make it look like a link */
+        }
+
+        #lrep305155944 {
+            visibility: visible; /* Ensure the content is visible */
+        }
+
+        /* Adjust the size of the NSL logo */
+        .nsl-logo {
+            width: 50%;  /* Adjust percentage to make it smaller or larger */
+            max-width: 300px;  /* Set a maximum width */
+            height: auto;  /* Maintain aspect ratio */
+            margin-top: 20px;  /* Space above the image */
+        }
+
+        /* Style for river garden image */
+        .rivergarden-logo {
+            width: 50%;  /* Adjust percentage for size */
+            max-width: 300px;  /* Set a maximum width */
+            height: auto;  /* Maintain aspect ratio */
+            margin-top: 20px;  /* Space above the image */
+            margin-bottom: 30px;  /* Add space below the image */
+        }
+
+        /* Footer Section */
+        .footer-logos-wrapper {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        .footer-logo {
+            width: 100%;
+            max-width: 120px;
+            height: auto;
+        }
+
+        /* Ensure a 5-image row regardless of screen size */
+        @media (min-width: 768px) {
+            .footer-logos-wrapper {
+                justify-content: space-evenly; /* Spread out the logos evenly */
+            }
+
+            .footer-logo {
+                max-width: 120px; /* Keep logos at a consistent size */
+                flex: 1;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .footer-logos-wrapper {
+                justify-content: space-evenly;
+            }
+
+            .footer-logo {
+                max-width: 100px; /* Reduce size of logos on smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;"> <!-- Set Roboto as the default font -->
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner">
+        <div style="text-align: center; font-size: 2rem; margin-bottom: 10px;">
+            <span role="img" aria-label="cookie">🍪</span>
+            <span role="img" aria-label="licking lips">😋</span>
+            <span role="img" aria-label="eyes">👀</span>
+        </div>
+        <p>Mmm, cookies! We use cookies to enhance your experience on our website. Cookies aren't for everyone, and that's okay. We'll remember your choice either way. <a href="https://policies.google.com/technologies/cookies" target="_blank" style="color: #007BFF;">Learn more</a>.</p>
+        <div style="margin-top: 10px;">
+            <button onclick="acceptCookies()" style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Yes, I like cookies</button>
+            <button onclick="declineCookies()" style="background-color: #f44336; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">No, thanks</button>
+        </div>
+    </div>
+
+    <!-- Header (Including the club crest and navigation bar) -->
+    <nav class="navbar" style="font-family: 'Roboto', sans-serif;">
+        <div class="logo">
+            <img src="../images/bullfinches_crest.png" alt="Brundall Bullfinches Crest">
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="hamburger" onclick="toggleDropdown()">&#9776;</div>
+
+        <!-- Dropdown Menu -->
+        <div class="dropdown" id="dropdownMenu" onmouseleave="closeDropdown()">
+            <a href="../index.html">HOME</a>
+            <a href="news.html">NEWS</a> <!-- Added NEWS link -->
+            <a href="about.html">ABOUT</a>
+            <a href="fixtures.html">FIXTURES</a>
+            <a href="results.html">RESULTS</a>
+            <a href="table.html">TABLES</a>
+            <a href="sponsors.html">SPONSORS</a>
+            <a href="https://www.justgiving.com/crowdfunding/BrundallBullfinchesFC?utm_term=PWmMVMkQM" target="_blank">DONATE</a>
+            <a href="contact.html">CONTACT</a>
+
+            <!-- Social Media Icons -->
+            <div class="social-icons">
+                <a href="https://www.instagram.com/bullfinchesfc?igsh=cWpya20ya3l4ZTls&utm_source=qr" target="_blank" class="social-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/bullfinchesfc?s=21" target="_blank" class="social-icon" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://wa.me/447424095517" target="_blank" class="social-icon" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="main-content" style="margin-top: 100px; padding: 20px;">
+        <!-- Tables -->
+				
+        <h2 style="text-transform: uppercase; margin-bottom: 20px;">Norfolk Sunday League</h2>
+        <h2 style="text-transform: uppercase; margin-bottom: 20px;">River Garden Division 4</h2>
+
+        <!-- River Garden Logo with Link -->
+        <a href="https://www.therivergardennorwich.com" target="_blank">
+            <img src="../images/rivergarden.jpeg" alt="River Garden" class="rivergarden-logo">
+        </a>
+
+        <!-- Full-Time API Embed for Recent Results -->
+        <div id="lrep305155944" style="width: 350px;">
+            Data loading....<br/>
+            <a href="https://fulltime.thefa.com/index.html?divisionseason=335423930" target="_blank">click here for The River Garden Division 4</a><br/><br/>
+            <a href="http://www.thefa.com/FULL-TIME" target="_blank">FULL-TIME Home</a>
+        </div>
+        <script language="javascript" type="text/javascript">
+            var lrcode = '305155944';
+        </script>
+        <script language="Javascript" type="text/javascript" src="https://fulltime.thefa.com/client/api/cs1.js"></script>
+
+        <!-- Norfolk Sunday League Logo with Link -->
+        <a href="https://norfolksundayleague.co.uk" target="_blank">
+            <img src="../images/nsl.webp" alt="Norfolk Sunday League" class="nsl-logo" style="margin-top: 40px;"> <!-- Added margin-top to create space -->
+        </a>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer" style="color: white; text-align: center; padding: 20px;">
+        <div class="footer-logos-wrapper" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; max-width: 100%; margin: 0 auto;">
+            <a href="#" style="flex: 1; max-width: 120px;">
+                <img src="../images/eaa.png" alt="EAAA Logo" class="footer-logo" style="width: 100%; height: auto;">
+            </a>
+            <a href="#" style="flex: 1; max-width: 120px;">
+                <img src="../images/nars.png" alt="NARS Logo" class="footer-logo" style="width: 100%; height: auto;">
+            </a>
+            <a href="#" style="flex: 1; max-width: 120px;">
+                <img src="../images/kick-it-out.webp" alt="Kick It Out Logo" class="footer-logo" style="width: 100%; height: auto;">
+            </a>
+            <a href="#" style="flex: 1; max-width: 120px;">
+                <img src="../images/england-accredited.webp" alt="England Accredited Logo" class="footer-logo" style="width: 100%; height: auto;">
+            </a>
+            <a href="#" style="flex: 1; max-width: 120px;">
+                <img src="../images/JustPlay.png" alt="Just Play Logo" class="footer-logo" style="width: 100%; height: auto;">
+            </a>
+        </div>
+        <p style="color: white; margin-top: 20px;">&copy; <span id="currentYear"></span> Brundall Bullfinches. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to display the current year -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        // Function to toggle the dropdown visibility for the hamburger menu
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block'; // Toggle visibility
+        }
+
+        // Function to close the dropdown menu when mouse leaves
+        function closeDropdown() {
+            document.getElementById('dropdownMenu').style.display = 'none';
+        }
+
+        // Function to accept cookies
+        function acceptCookies() {
+            document.getElementById('cookie-consent-banner').style.display = 'none'; // Hide the cookie banner
+        }
+
+        // Function to decline cookies
+        function declineCookies() {
+            document.getElementById('cookie-consent-banner').style.display = 'none'; // Hide the cookie banner
+        }
+    </script>
+</body>
+
+</html>
