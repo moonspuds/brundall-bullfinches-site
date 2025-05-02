@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Brundall Bullfinches</title>
+    <link rel="icon" type="image/png" href="../images/bullfinches_crest.png">
+
+    <!-- Google Fonts for Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome CDN for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body style="font-family: 'Roboto', sans-serif;">
+
+    <!-- Header -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/bullfinches_crest.png" alt="Brundall Bullfinches Crest">
+        </div>
+
+        <div class="hamburger" onclick="toggleDropdown()">&#9776;</div>
+
+        <div class="dropdown" id="dropdownMenu" onmouseleave="closeDropdown()">
+            <a href="../index.html">HOME</a>
+            <a href="about.html">ABOUT</a>
+						<a href="news.html">NEWS</a>
+            <a href="fixtures.html">FIXTURES</a>
+            <a href="results.html">RESULTS</a>
+            <a href="table.html">TABLES</a>
+            <a href="sponsors.html">SPONSORS</a>
+            <a href="https://www.justgiving.com/crowdfunding/BrundallBullfinchesFC?utm_term=PWmMVMkQM" target="_blank">DONATE</a>
+												<a href="charity.html">CHARITY</a>
+            <a href="contact.html">CONTACT</a>
+
+            <div class="social-icons">
+							<a href="https://www.facebook.com/share/19c97VfD5F/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bullfinchesfc?igsh=cWpya20ya3l4ZTls&utm_source=qr" target="_blank" class="social-icon" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/bullfinchesfc?s=21" target="_blank" class="social-icon" title="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://wa.me/447424095517" target="_blank" class="social-icon" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <section class="main-content" style="margin-top: 100px; padding: 20px;">
+        <h2 style="text-transform: uppercase; margin-bottom: 20px;">Next Game</h2>
+
+        <!-- Full-Time API Embed (Upcoming Fixtures) -->
+        <div id="lrep810707086" style="width: 350px;">
+            Data loading....<a href="null">click here for null</a><br/><br/>
+            <a href="http://www.thefa.com/FULL-TIME">FULL-TIME Home</a>
+        </div>
+        <script language="javascript" type="text/javascript">
+            var lrcode = '810707086';
+        </script>
+        <script language="Javascript" type="text/javascript" src="https://fulltime.thefa.com/client/api/cs1.js"></script>
+
+        <h2 style="text-transform: uppercase; margin-top: 40px; margin-bottom: 20px;">Upcoming Fixtures</h2>
+
+        <!-- Full-Time API Embed (Next Fixture) -->
+        <div id="lrep637888856" style="width: 350px;">
+            Data loading....<a href="null">click here for null</a><br/><br/>
+            <a href="http://www.thefa.com/FULL-TIME">FULL-TIME Home</a>
+        </div>
+        <script language="javascript" type="text/javascript">
+            var lrcode = '637888856';
+        </script>
+        <script language="Javascript" type="text/javascript" src="https://fulltime.thefa.com/client/api/cs1.js"></script>
+    </section>
+
+    <!-- Footer Section -->
+    <style>
+        /* Footer logo styles */
+        .footer-logos-wrapper {
+            display: flex;
+            justify-content: center; /* Center the logos */
+            align-items: center;
+            gap: 15px; /* Add spacing between logos */
+            flex-wrap: nowrap; /* Ensure horizontal alignment */
+        }
+
+        .footer-logo {
+            flex: 1;
+            max-width: 120px; /* Control the size of each logo */
+            height: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            .footer-logos-wrapper {
+                flex-wrap: nowrap; /* Prevent stacking on smaller screens */
+                justify-content: space-between; /* Maintain spacing on mobile */
+            }
+
+            .footer-logo {
+                max-width: 60px; /* Smaller logo size for mobile */
+            }
+        }
+    </style>
+
+    <footer class="footer" style="color: white; text-align: center; padding: 20px;">
+        <div class="footer-logos-wrapper">
+            <a href="#">
+                <img src="../images/eaa.png" alt="EAAA Logo" class="footer-logo">
+            </a>
+            <a href="#">
+                <img src="../images/nars.png" alt="NARS Logo" class="footer-logo">
+            </a>
+            <a href="#">
+                <img src="../images/kick-it-out.webp" alt="Kick It Out Logo" class="footer-logo">
+            </a>
+            <a href="#">
+                <img src="../images/england-accredited.webp" alt="England Accredited Logo" class="footer-logo">
+            </a>
+            <a href="#">
+                <img src="../images/JustPlay.png" alt="Just Play Logo" class="footer-logo">
+            </a>
+        </div>
+        <p style="color: white; margin-top: 20px;">&copy; <span id="currentYear"></span> Brundall Bullfinches. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to display the current year -->
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+    <!-- JavaScript for Hamburger Menu -->
+    <script>
+        function toggleDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function closeDropdown() {
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = 'none';
+        }
+    </script>
+
+    <!-- External JavaScript for Cookie Banner -->
+    <script src="../js/cookiebanner.js"></script>
+</body>
+
+</html>
