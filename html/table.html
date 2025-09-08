@@ -15,80 +15,12 @@
 
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="../css/styles.css"> <!-- Adjusted path -->
-
-    <style>
-        /* Ensure the links behave like normal links, but also can be easily seen */
-        #lrep305155944 a {
-            color: #007BFF; /* Set color to blue like a link */
-            text-decoration: underline; /* Underline the text to make it look like a link */
-        }
-
-        #lrep305155944 {
-            visibility: visible; /* Ensure the content is visible */
-        }
-
-        /* Adjust the size of the NSL logo */
-        .nsl-logo {
-            width: 50%;  /* Adjust percentage to make it smaller or larger */
-            max-width: 300px;  /* Set a maximum width */
-            height: auto;  /* Maintain aspect ratio */
-            margin-top: 20px;  /* Space above the image */
-        }
-
-        /* Style for river garden image */
-        .rivergarden-logo {
-            width: 50%;  /* Adjust percentage for size */
-            max-width: 300px;  /* Set a maximum width */
-            height: auto;  /* Maintain aspect ratio */
-            margin-top: 20px;  /* Space above the image */
-            margin-bottom: 30px;  /* Add space below the image */
-        }
-
-        /* Footer Section */
-        .footer-logos-wrapper {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 20px;
-            align-items: center;
-            margin: 0 auto;
-            max-width: 100%;
-        }
-
-        .footer-logo {
-            width: 100%;
-            max-width: 120px;
-            height: auto;
-        }
-
-        /* Ensure a 5-image row regardless of screen size */
-        @media (min-width: 768px) {
-            .footer-logos-wrapper {
-                justify-content: space-evenly; /* Spread out the logos evenly */
-            }
-
-            .footer-logo {
-                max-width: 120px; /* Keep logos at a consistent size */
-                flex: 1;
-            }
-        }
-
-        @media (max-width: 767px) {
-            .footer-logos-wrapper {
-                justify-content: space-evenly;
-            }
-
-            .footer-logo {
-                max-width: 100px; /* Reduce size of logos on smaller screens */
-            }
-        }
-    </style>
 </head>
 
 <body style="font-family: 'Roboto', sans-serif;"> <!-- Set Roboto as the default font -->
 
     <!-- Cookie Consent Banner -->
-    <div id="cookie-consent-banner">
+    <div id="cookie-consent-banner" style="display: none;">
         <div style="text-align: center; font-size: 2rem; margin-bottom: 10px;">
             <span role="img" aria-label="cookie">🍪</span>
             <span role="img" aria-label="licking lips">😋</span>
@@ -114,8 +46,8 @@
         <div class="dropdown" id="dropdownMenu" onmouseleave="closeDropdown()">
             <a href="../index.html">HOME</a>
             <a href="about.html">ABOUT</a>
-						<a href="news.html">NEWS</a>
-            <a href="fixtures.html">FIXTURES</a>
+						<a href="news.html">NEWS</a> 
+					  <a href="fixtures.html">FIXTURES</a>
             <a href="results.html">RESULTS</a>
             <a href="table.html">TABLES</a>
             <a href="sponsors.html">SPONSORS</a>
@@ -124,6 +56,7 @@
             <a href="contact.html">CONTACT</a>
 
             <!-- Social Media Icons -->
+						
             <div class="social-icons">
                
 						<a href="https://www.facebook.com/share/19c97VfD5F/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
@@ -142,48 +75,34 @@
 
     <!-- Main Content -->
     <section class="main-content" style="margin-top: 100px; padding: 20px;">
-        <!-- Tables -->
-				
-        <h2 style="text-transform: uppercase; margin-bottom: 20px;">Norfolk Sunday League</h2>
-        <h2 style="text-transform: uppercase; margin-bottom: 20px;">Wensum Print Division 2</h2>
+        <!-- Recent Results Heading -->
+        <h2 style="text-transform: uppercase; margin-bottom: 20px;">Recent Results</h2>
 
         <!-- Full-Time API Embed for Recent Results -->
-<style>
-  #lrep179400058 a {
-    color: black !important;   /* makes the links black */
-    text-decoration: none;     /* optional: removes underline */
-  }
-
-  #lrep179400058 a:hover {
-    color: darkblue !important; /* optional hover colour */
-  }
-</style>
-
-        <!-- Norfolk Sunday League Logo with Link -->
-        <a href="https://norfolksundayleague.co.uk" target="_blank">
-            <img src="../images/nsl.webp" alt="Norfolk Sunday League" class="nsl-logo" style="margin-top: 40px;"> <!-- Added margin-top to create space -->
-        </a>
+<div id="lrep203627413" style="width: 350px;">Data loading....<a href="null">click here for null</a><br/><br/><a href="http://www.thefa.com/FULL-TIME">FULL-TIME Home</a></div>
+<script language="javascript" type="text/javascript">
+var lrcode = '203627413'
+</script>
+<script language="Javascript" type="text/javascript" src="https://fulltime.thefa.com/client/api/cs1.js"></script>
     </section>
-    
-    <script src="https://fulltime.thefa.com/client/api/cs1.js"></script>
 
     <!-- Footer Section -->
     <footer class="footer" style="color: white; text-align: center; padding: 20px;">
-        <div class="footer-logos-wrapper" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: space-between; max-width: 100%; margin: 0 auto;">
+        <div class="footer-logos-wrapper" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; align-items: center; max-width: 100%; margin: 0 auto;">
             <a href="#" style="flex: 1; max-width: 120px;">
-                <img src="../images/eaa.png" alt="EAAA Logo" class="footer-logo" style="width: 100%; height: auto;">
+                <img src="../images/eaa.png" alt="EAAA Logo" class="footer-logo" style="width: 100%; max-width: 120px; height: auto;">
             </a>
             <a href="#" style="flex: 1; max-width: 120px;">
-                <img src="../images/nars.png" alt="NARS Logo" class="footer-logo" style="width: 100%; height: auto;">
+                <img src="../images/nars.png" alt="NARS Logo" class="footer-logo" style="width: 100%; max-width: 120px; height: auto;">
             </a>
             <a href="#" style="flex: 1; max-width: 120px;">
-                <img src="../images/kick-it-out.webp" alt="Kick It Out Logo" class="footer-logo" style="width: 100%; height: auto;">
+                <img src="../images/kick-it-out.webp" alt="Kick It Out Logo" class="footer-logo" style="width: 100%; max-width: 120px; height: auto;">
             </a>
             <a href="#" style="flex: 1; max-width: 120px;">
-                <img src="../images/england-accredited.webp" alt="England Accredited Logo" class="footer-logo" style="width: 100%; height: auto;">
+                <img src="../images/england-accredited.webp" alt="England Accredited Logo" class="footer-logo" style="width: 100%; max-width: 120px; height: auto;">
             </a>
             <a href="#" style="flex: 1; max-width: 120px;">
-                <img src="../images/JustPlay.png" alt="Just Play Logo" class="footer-logo" style="width: 100%; height: auto;">
+                <img src="../images/JustPlay.png" alt="Just Play Logo" class="footer-logo" style="width: 100%; max-width: 120px; height: auto;">
             </a>
         </div>
         <p style="color: white; margin-top: 20px;">&copy; <span id="currentYear"></span> Brundall Bullfinches. All rights reserved.</p>
@@ -204,19 +123,13 @@
 
         // Function to close the dropdown menu when mouse leaves
         function closeDropdown() {
-            document.getElementById('dropdownMenu').style.display = 'none';
-        }
-
-        // Function to accept cookies
-        function acceptCookies() {
-            document.getElementById('cookie-consent-banner').style.display = 'none'; // Hide the cookie banner
-        }
-
-        // Function to decline cookies
-        function declineCookies() {
-            document.getElementById('cookie-consent-banner').style.display = 'none'; // Hide the cookie banner
+            const dropdown = document.getElementById('dropdownMenu');
+            dropdown.style.display = 'none'; // Close the dropdown when mouse leaves
         }
     </script>
+
+    <!--_€€\\€ External JavaScript for Cookie Banner -->
+    <script src="../js/cookiebanner.js"></script> <!-- Reference to external JS file -->
 </body>
 
 </html>
